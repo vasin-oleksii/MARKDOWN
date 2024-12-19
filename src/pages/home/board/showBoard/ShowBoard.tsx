@@ -1,5 +1,8 @@
+import renderMarkdown from "../../../../shared/func/renderMarkdown";
+
 const ShowBoard = ({ value }: { value: string }) => {
-  return <div>{value}</div>;
+  console.log(renderMarkdown(value));
+  return <div>{renderMarkdown(value)}</div>;
 };
 
 export default ShowBoard;
