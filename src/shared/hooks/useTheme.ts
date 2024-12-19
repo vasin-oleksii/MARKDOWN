@@ -1,9 +1,13 @@
 import { useState } from "react";
 
-export type ThemeOptions = "dark" | "light" | "lgbt";
+export enum ThemeOptions {
+  DARK = "dark",
+  LIGHT = "light",
+  LGBT = "lgbt",
+}
 
 const themeNowFromLocalStorage =
-  (localStorage.getItem("theme") as ThemeOptions) || "light";
+  (localStorage.getItem("theme") as ThemeOptions) || ThemeOptions.LIGHT;
 
 const useTheme = () => {
   const [selectedTheme, setSelectedTheme] = useState<ThemeOptions>(

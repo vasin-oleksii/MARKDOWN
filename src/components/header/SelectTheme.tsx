@@ -7,6 +7,7 @@ const SelectTheme = () => {
     <label className="text-primary" htmlFor="theme">
       Theme
       <select
+        className="ml-3 rounded bg-card"
         name="theme"
         id="theme"
         onChange={(e) => setSelectedTheme(e.target.value as ThemeOptions)}

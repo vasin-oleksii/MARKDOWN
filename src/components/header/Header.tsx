@@ -3,11 +3,11 @@ import SelectTheme from "./SelectTheme";
 
 const Header = () => {
   return (
-    <div>
+    <nav className="flex gap-4 items-center">
       <BtnHeader>File</BtnHeader>
       <BtnHeader>Formatting</BtnHeader>
       <SelectTheme />
-    </div>
+    </nav>
   );
 };
 

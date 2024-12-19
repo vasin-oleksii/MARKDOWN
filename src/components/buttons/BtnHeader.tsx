@@ -2,7 +2,11 @@ interface BtnHeaderProps {
   children: string;
 }
 const BtnHeader = ({ children }: BtnHeaderProps) => {
-  return <div className="text-primary">{children}</div>;
+  return (
+    <a href="#" className="text-primary p-2 px-4">
+      {children}
+    </a>
+  );
 };
 
 export default BtnHeader;
