@@ -2,6 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+.light {
+  --background: rgba(255, 255, 255, 1);
+  --border: rgba(230, 230, 230, 1);
+  --card: rgba(255, 255, 255, 1);
+  --primary: rgba(204, 153, 255, 1);
+  --secondary: rgba(186, 85, 211, 1);
+  --cta: rgba(138, 43, 226, 1);
+  --cta-active: rgba(75, 0, 130, 1);
+  --cta-text: rgba(255, 255, 255, 1);
+}
+
+.dark {
+  --background: rgba(0, 0, 0, 1);
+  --border: rgba(34, 34, 34, 1);
+  --card: rgba(23, 23, 23, 1);
+  --primary: rgba(75, 0, 130, 1);
+  --secondary: rgba(128, 0, 128, 1);
+  --cta: rgba(138, 43, 226, 1);
+  --cta-active: rgba(186, 85, 211, 1);
+  --cta-text: rgba(255, 255, 255, 1);
+}
+.lgbt {
+  --background: rgba(0, 0, 0, 1);
+  --border: rgba(255, 0, 255, 1);
+  --card: rgba(255, 165, 0, 1);
+  --primary: rgba(0, 255, 0, 1);
+  --secondary: rgba(0, 0, 255, 1);
+  --cta: rgba(255, 0, 0, 1);
+  --cta-active: rgba(255, 255, 0, 1);
+  --cta-text: rgba(255, 255, 255, 1);
+  --rainbow-gradient: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff9900,
+    #33cc33,
+    #0066cc,
+    #9900cc
+  );
+}
+
 body {
-  background-color: #282828;
+  background-color: var(--background);
 }
