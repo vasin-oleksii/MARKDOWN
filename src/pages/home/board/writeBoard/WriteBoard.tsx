@@ -9,11 +9,6 @@ const WriteBoard = ({ value, onChange }: WriteBoardProps) => {
       name="markdown"
       id="markdown"
       value={value}
-      onKeyDown={(e) => {
-        if (e.key === "Enter") {
-          onChange(value + "⠀");
-        }
-      }}
       onChange={(e) => onChange(e.target.value)}
       className="resize-none m-2 bg-card max-w-full max-h-full px-2 py-1 rounded-md "
       placeholder="# Hello World"
