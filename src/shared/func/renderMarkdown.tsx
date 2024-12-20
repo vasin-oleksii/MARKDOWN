@@ -4,12 +4,10 @@ const renderMarkdown = (text: string) => {
   return text.split("\n").map((line, index) => {
     if (line === "") return <br key={index} />;
 
-    switch (line.split("")[0]) {
-      case "#":
-        return renderMarkdownHeaders(line, index);
-      default:
-        return <p key={index}>{line}</p>;
+    if (line.match(/^(#{1,6}) /)) {
+      return renderMarkdownHeaders(line, index);
     }
+    return <p key={index}>{line}</p>;
   });
 };
 
