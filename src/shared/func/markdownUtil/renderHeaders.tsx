@@ -1,11 +1,10 @@
 import React from "react";
 
-const renderMarkdownHeaders = (line: string, index: number) => {
+const renderHeaders = (line: string, index: number) => {
   const match = line.match(/^(#{1,6})/);
-  console.log(match);
   if (match) {
     const headerLevel = match[0].length;
-    console.log(headerLevel);
+
     return React.createElement(
       `h${headerLevel}`,
       { key: index },
@@ -14,4 +13,4 @@ const renderMarkdownHeaders = (line: string, index: number) => {
   }
 };
 
-export default renderMarkdownHeaders;
+export default renderHeaders;

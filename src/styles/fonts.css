@@ -1,0 +1,20 @@
+strong {
+  display: block;
+  font-weight: bold;
+
+  color: var(--primary);
+}
+
+em {
+  display: block;
+  font-style: italic;
+  color: var(--secondary);
+}
+
+strong em {
+  display: block;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--cta);
+  text-decoration: underline;
+}
